@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodio Perdido - Sugerencias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lora&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="misEstilos.css">
+    <style>
+        /* Estilos específicos para el banner y footer */
+        .banner-img {
+            width: 100%;
+            height: 200px; /* Ajusta la altura a tu gusto */
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-custom {
+            background-color: var(--antique-ruby);
+            color: var(--desert-sand);
+            padding: 2rem 0;
+            margin-top: 3rem;
+            font-family: 'Lora', serif;
+        }
+        
+        .footer-custom a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-custom a:hover {
+            color: var(--desert-sand);
+        }
+    </style>
+</head>
+<body class="matcha-background"> <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand brand-aesthetic" href="index.html">✧ Episodio Perdido</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sugerencias.html">Sugerencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <img src="img/banner.jpeg" alt="Banner Sugerencias" class="banner-img shadow-sm">
+                
+                <div class="card p-4 shadow-sm" style="border: 2px solid var(--pearly-purple);">
+                    <h2 class="text-center mb-4" style="font-family: 'Bebas Neue', sans-serif; color: var(--antique-ruby);">¿Tienes un Episodio Perdido?</h2>
+                    <p class="text-center" style="font-family: 'Lora', serif;">Regístrate y sugiérenos un anime para añadir al catálogo.</p>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escribe aquí tu nombre completo" required style="border: 2px solid var(--ceil);">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required style="border: 2px solid var(--ceil);">
+                        </div>
+                        <div class="mb-3">
+                            <label for="anime" class="form-label">Anime que sugieres</label>
+                            <input type="text" class="form-control" id="anime" placeholder="Nombre completo del anime" required style="border: 2px solid var(--ceil);">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentario" class="form-label">¿Por qué debemos verlo?</label>
+                            <textarea class="form-control" id="comentario" rows="3" required style="border: 2px solid var(--ceil);"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit w-100" style="background-color: var(--chinese-blue); color: white; border: none; padding: 10px;">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <p>&copy; 2026 Episodio Perdido. Creado con cariño por Jimenita.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

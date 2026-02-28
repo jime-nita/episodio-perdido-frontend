@@ -1,0 +1,132 @@
+/* --- VARIABLES DE COLOR (ACTUALIZADO) --- */
+:root {
+    --chinese-blue: #414B9E;
+    --ceil: #9792CB;
+    --pearly-purple: #AA74A0;
+    --desert-sand: #E2C99E;
+    --antique-ruby: #852736;
+}
+
+/* --- APLICACIÓN DE FUENTES --- */
+body, p, .card-text, .form-label, .form-control {
+    font-family: 'Lora', serif;
+    color: #333; /* Texto legible */
+}
+
+h1, h2, h3, h4, h5, .card-title, .navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--desert-sand); /* Títulos principales en arena */
+    letter-spacing: 1px;
+}
+
+/* --- ESTILOS GENERALES Y ESTRUCTURA --- */
+body {
+    background-color: #414B9E; /* Fondo suave general */
+}
+
+/* Navbar estilo Antiguo Rubí */
+.navbar {
+    background-color: var(--desert-sand) !important;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Archivo Black', sans-serif !important;
+    color: var(--antique-ruby) !important; /* Brand en arena */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-shadow: #333 0.5px 0.5px 1px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/fairytail.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-section h1 {
+    color: var(--ceil) !important; /* Título hero en arena */
+    font-family: 'Archivo Black', sans-serif !important;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: #333 4px 4px 6px;
+}
+
+/* --- TARJETAS Y CATÁLOGO --- */
+.card {
+    transition: transform 0.3s;
+    border-radius: 15px;
+    border: 2px solid var(--pearly-purple); /* Borde morado */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--antique-ruby) !important; /* Título tarjeta en rubí */
+    font-size: 1.5rem !important;
+}
+
+.card-text strong {
+    color: var(--pearly-purple); /* Autor/Género en morado */
+}
+
+.img-news-custom {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+/* --- FORMULARIOS Y BOTONES --- */
+.form-control, .form-select {
+    border: 2px solid var(--ceil); /* Borde campo en ceil */
+}
+
+.btn-submit {
+    background-color: var(--chinese-blue); /* Botones en azul */
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    padding: 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--pearly-purple);
+    color: white;
+}
+
+/* --- ESTILOS DEL FOOTER (PARA TODAS LAS PÁGINAS) --- */
+.footer-custom {
+    background-color: var(--desert-sand);
+    color: var(--desert-sand);
+    padding: 2rem 0;
+    margin-top: 3rem;
+    font-family: 'Lora', serif;
+}
+
+.footer-custom a {
+    color: #fff !important;
+    text-shadow: #333 0.5px 0.5px 1px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer-custom a:hover {
+    color: #fff;
+    text-shadow: #333 0.5px 0.5px 1px;
+}
