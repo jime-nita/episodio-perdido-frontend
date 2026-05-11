@@ -67,8 +67,8 @@
                             <input type="text" class="form-control" id="anime" placeholder="Nombre completo del anime" required style="border: 2px solid var(--ceil);">
                         </div>
                         <div class="mb-3">
-                            <label for="comentario" class="form-label">¿Por qué debemos verlo?</label>
-                            <textarea class="form-control" id="comentario" rows="3" required style="border: 2px solid var(--ceil);"></textarea>
+                            <label for="descripcion" class="form-label">¿Por qué debemos verlo?</label>
+                            <textarea class="form-control" id="descripcion" rows="3" required style="border: 2px solid var(--ceil);"></textarea>
                         </div>
                         <button type="submit" class="btn btn-submit w-100" style="background-color: var(--chinese-blue); color: white; border: none; padding: 10px;">Enviar Solicitud</button>
                     </form>
@@ -97,9 +97,9 @@
             e.preventDefault();
 
             const datos = {
-            nombreUsuario: document.getElementById('tu-id-nombre').value,
-            tituloAnime: document.getElementById('tu-id-anime').value,
-            descripcion: document.getElementById('tu-id-descripcion').value
+            nombreUsuario: document.getElementById('nombre').value,
+            tituloAnime: document.getElementById('anime').value,
+            descripcion: document.getElementById('descripcion').value
             };
 
             try {
